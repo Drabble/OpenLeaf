@@ -1,0 +1,23 @@
+{
+  "name": "Inleafs",
+  "description": "Projects social network",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.x",
+    "twig": "0.7.x",			
+    "mongoose" : "~3.8.1", 	
+    "nodemon" : "1.0.x",
+    "bcrypt-nodejs" : "latest", 
+    "socket.io" : "0.9.16",
+    "connect" : "~2.15.0",
+	"favicon" : "0.0.2",
+    "logger" : "0.0.1",
+    "cookie-parser" : "1.0.1",
+    "cookie-session" : "latest",
+    "body-parser" : "latest",
+    "json" : "latest",
+    "twig" : "latest",
+    "compression" : "latest"
+  }
+}

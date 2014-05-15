@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	{% block head %}
+			<!-- Latest compiled and minified Jquery library -->
+			<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+			
+			<!-- Latest compiled and minified Bootstrap CSS -->
+			<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+			
+			<!-- Latest compiled and minified Bootstrap JavaScript -->
+			<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+			
+			<!-- Latest compiled and minified Font awesome -->
+			<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+			
+			<script type="text/javascript" src="/js/custom.js"></script>
+			
+			<!-- Custom Stylesheet -->
+            <link rel="stylesheet" type="text/css" href="/css/style.css" />
+     {% endblock %}
+     
+     <title>
+     	{% block title %}{% endblock %} - OpenLeaf
+     </title>
+     
+</head>
+<body>
+	<div id="header">
+		<a href="/"><img src="/images/leaf.png" id="headerLogo"/></a>
+	</div>
+	<div id="container">
+		<div id="content">
+			{% block content %}
+			{% endblock %}
+		</div>
+	</div>
+	
+	<!--  Setup socket.io -->
+    <script src="/socket.io/socket.io.js"></script>
+	<script>
+    	var socket = io.connect('http://localhost');
+    </script>
+</body>
+</html>

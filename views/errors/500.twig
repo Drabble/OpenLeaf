@@ -1,0 +1,17 @@
+{% extends "layout.twig" %}
+
+{% block title %}
+	Error 404
+{% endblock %}
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+{% block content %}
+	<div id="full">
+		<div class="box">
+		    <h1>Error 500</h1>
+			<p>Server error, please contact an administrator...</p>
+		</div>
+	</div>
+{% endblock %}
+Error 404 {{ url }} not found

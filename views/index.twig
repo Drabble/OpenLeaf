@@ -1,0 +1,17 @@
+{% extends "layout.twig" %}
+
+{% block title %}
+	Index
+{% endblock %}
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+{% block content %}
+	<div class="body">
+		<input id="userName" type="text"/>
+		<div id="msgWindow">
+		
+		</div>
+		<input id="msg" type="text" disabled="true"/>
+	</div>
+{% endblock %}
